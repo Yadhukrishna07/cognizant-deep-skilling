@@ -1,17 +1,29 @@
-# Cognizant Digital Nurture 5.0 (DN 5.0) – Deep Skilling Program
+# 🚀 Cognizant Digital Nurture 5.0 (DN 5.0)
 
-## About
+<p align="center">
+  <img src="https://img.shields.io/badge/Cognizant-DN%205.0-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Java-FSE-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-In%20Progress-success?style=for-the-badge" />
+</p>
 
-This repository contains my solutions, hands-on exercises, assignments, and projects completed as part of the Cognizant Digital Nurture 5.0 (DN 5.0) Deep Skilling Program.
+## 👨‍💻 About Me
 
-## Week 1
+Hi, I'm **Yadhu Krishna U S**, a passionate Information Technology student and aspiring Software Engineer.
 
-### Design Patterns and Principles
+This repository contains my hands-on exercises, assignments, and projects completed as part of the **Cognizant Digital Nurture 5.0 (DN 5.0) Deep Skilling Program**.
+
+---
+
+# 📚 Learning Journey
+
+## 🔹 Week 1
+
+### Design Patterns & Principles
 
 * Singleton Pattern
 * Factory Method Pattern
 
-### Data Structures and Algorithms
+### Data Structures & Algorithms
 
 * E-commerce Platform Search Function
 * Financial Forecasting
@@ -23,112 +35,107 @@ This repository contains my solutions, hands-on exercises, assignments, and proj
 
 ### JUnit & Mockito
 
-* Setting Up JUnit
-* Assertions in JUnit
+* JUnit Basics
+* Assertions
 * AAA Pattern
-* Mocking and Stubbing
+* Mocking & Stubbing
 * Verifying Interactions
 
-### SLF4J Logging
+### Logging Framework
 
-* Logging Error Messages and Warning Levels
+* SLF4J Logging
 
 ---
 
-## Week 2
+## 🔹 Week 2
 
-### Spring Core and Maven
+### Spring Core & Maven
 
-* Configuring a Basic Spring Application
+* Spring Framework Fundamentals
 * Dependency Injection
-* Maven Project Configuration
+* Maven Configuration
 
-### Spring Data JPA with Spring Boot and Hibernate
+### Spring Data JPA & Hibernate
 
-* Spring Data JPA Quick Example
-* Query Methods
-* ORM Mapping
 * CRUD Operations
+* ORM Concepts
+* Query Methods
 
 ---
 
-## Week 3
+## 🔹 Week 3
 
 ### Spring REST using Spring Boot 3
 
-* Spring Web Project using Maven
-* Spring Configuration XML
-* Hello World REST Service
-* Country REST Service
-* JWT Authentication Service
+* RESTful Web Services
+* Spring Web Projects
+* JWT Authentication
 
 ---
 
-## Week 4
+## 🔹 Week 4
 
-### Code Quality and SonarQube
+### Code Quality & Microservices
 
-* Code Quality Analysis
-* SonarQube Metrics
-
-### Microservices with Spring Boot 3 and Spring Cloud
-
-* Account Service
-* Loan Service
-* API Gateway
+* SonarQube
+* Spring Cloud
 * Eureka Discovery Server
+* API Gateway
+* Microservices Architecture
 
 ---
 
-## Week 5
+## 🔹 Week 5
 
 ### Front-End Development
 
-* Angular Fundamentals
-* React Fundamentals
+* Angular
+* React
 * Components
-* State Management
 * Routing
 
 ---
 
-## Week 6
+## 🔹 Week 6
 
-### Angular / React Advanced Concepts
+### Git, CI/CD & Advanced Front-End
 
-* Forms and Validation
-* API Integration
-* Component Communication
-
-### Git and CI/CD
-
-* Git Workflows
-* GitHub
+* GitHub Workflow
 * Continuous Integration
 * Continuous Deployment
 
 ---
 
-## Week 7
+## 🔹 Week 7
 
-### DevOps
+### DevOps & GenAI
 
 * Docker
-* Containerization
 * Cloud Fundamentals
-
-### Generative AI Fundamentals
-
-* Introduction to AI
+* Generative AI Fundamentals
 * Prompt Engineering
-* LLM Concepts
-* AI Applications
 
 ---
-## Author
 
-**Yadhu Krishna U S**
-B.Tech Information Technology
-RMK Engineering College
+## 🎯 Program Goal
 
-GitHub: https://github.com/Yadhukrishna07
+To strengthen my skills in:
+
+✨ Software Development
+✨ Backend Engineering
+✨ Full Stack Development
+✨ Cloud & DevOps
+✨ Problem Solving
+✨ Industry Best Practices
+
+---
+
+## 🌟 Author
+
+### Yadhu Krishna U S
+
+🎓 B.Tech Information Technology
+🏫 RMK Engineering College
+💻 Java FSE Learner | Web Developer | Tech Enthusiast
+
+⭐ If you visit this repository, feel free to explore my learning journey!
