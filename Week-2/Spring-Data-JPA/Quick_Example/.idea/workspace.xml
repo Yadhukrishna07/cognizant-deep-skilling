@@ -5,28 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f95d75bc-2fc5-4809-aba6-db5cfe81aaf8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/orm-learn/src/main/java/model/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orm-learn/src/main/java/repository/CountryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orm-learn/src/main/java/service/CountryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Quick_Example.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-learn/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/orm-learn/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-learn/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-learn/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-learn/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-learn/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-learn/Output.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-learn/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orm-learn/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-learn/src/main/java/com/cognizant/ormlearn/OrmLearnApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-learn/src/main/java/com/cognizant/ormlearn/model/Country.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-learn/src/main/java/com/cognizant/ormlearn/repository/CountryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-learn/src/main/java/com/cognizant/ormlearn/service/CountryService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/orm-learn/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/orm-learn/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/cognizant-deep-skilling/Week-2/Spring-Data-JPA/Quick_Example",
+    "last_opened_file_path": "E:/cognizant-deep-skilling/Week-3/Spring REST using Spring Boot 3/1. spring-rest-handson/Create a Spring Web Project using Maven/spring-learn",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
