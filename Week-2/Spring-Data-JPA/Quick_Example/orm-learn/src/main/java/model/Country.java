@@ -1,4 +1,4 @@
-package com.cognizant.ormlearn.model;
+package com.cognizant.orm_learn.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
