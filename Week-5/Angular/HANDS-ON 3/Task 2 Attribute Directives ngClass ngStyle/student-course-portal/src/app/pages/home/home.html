@@ -1,0 +1,27 @@
+<div class="home-container">
+  <h1>Welcome back 👋</h1>
+  <p class="subtitle">Track your enrolled courses, monitor grades, and manage your academic journey.</p>
+
+  <div class="stats-cards">
+    <div class="card">
+      <span class="card-label">Courses Available</span>
+      <span class="card-value">12</span>
+    </div>
+    <div class="card">
+      <span class="card-label">Enrolled</span>
+      <span class="card-value">3</span>
+    </div>
+    <div class="card">
+      <span class="card-label">GPA</span>
+      <span class="card-value">3.8</span>
+    </div>
+  </div>
+
+  <button class="enroll-btn" [disabled]="!isPortalActive" (click)="onEnrollClick()">+ Enroll Now</button>
+  <p class="message" *ngIf="message">✅ {{ message }}</p>
+
+  <div class="search-box">
+    <input [(ngModel)]="searchTerm" placeholder="🔍 Search courses...">
+    <p class="search-result">Searching for: <strong>{{ searchTerm }}</strong></p>
+  </div>
+</div>

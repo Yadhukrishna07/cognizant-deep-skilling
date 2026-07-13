@@ -1,0 +1,21 @@
+.course-list-container {
+  padding: 30px 40px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.course-list-container h2 {
+  margin-bottom: 20px;
+  color: #2e2e2e;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.selected-msg {
+  margin-top: 20px;
+  font-weight: 500;
+  color: #1976d2;
+}
