@@ -1,0 +1,47 @@
+<div class="form-page">
+  <h2 class="form-title">Enrollment Form</h2>
+
+  <form #enrollForm="ngForm" (ngSubmit)="onSubmit(enrollForm)"
+        class="form-box" [ngClass]="{'valid-box': enrollForm.valid, 'invalid-box': enrollForm.invalid && enrollForm.touched}">
+
+    <label>Name:</label>
+    <input type="text" name="studentName" [(ngModel)]="studentName"
+           #nameCtrl="ngModel" required minlength="3">
+    <p class="error" *ngIf="nameCtrl.touched && nameCtrl.errors?.['required']">Name is required.</p>
+    <p class="error" *ngIf="nameCtrl.touched && nameCtrl.errors?.['minlength']">Name must be at least 3 characters.</p>
+
+    <label>Email:</label>
+    <input type="email" name="studentEmail" [(ngModel)]="studentEmail"
+           #emailCtrl="ngModel" required email>
+    <p class="error" *ngIf="emailCtrl.touched && emailCtrl.errors?.['required']">Email is required.</p>
+    <p class="error" *ngIf="emailCtrl.touched && emailCtrl.errors?.['email']">Enter a valid email.</p>
+
+    <label>Course ID:</label>
+    <input type="number" name="courseId" [(ngModel)]="courseId"
+           #courseIdCtrl="ngModel" required>
+    <p class="error" *ngIf="courseIdCtrl.touched && courseIdCtrl.errors?.['required']">Course ID is required.</p>
+
+    <label>Preferred Semester:</label>
+    <select name="preferredSemester" [(ngModel)]="preferredSemester"
+            #semesterCtrl="ngModel" required>
+      <option value="" disabled>Select Semester</option>
+      <option value="Odd">Odd</option>
+      <option value="Even">Even</option>
+    </select>
+    <p class="error" *ngIf="semesterCtrl.touched && semesterCtrl.errors?.['required']">Preferred semester is required.</p>
+
+    <div class="checkbox-row">
+      <input type="checkbox" name="agreeToTerms" [(ngModel)]="agreeToTerms"
+             #termsCtrl="ngModel" required>
+      <label>I agree to the <a href="#">Terms and Conditions</a></label>
+      <span class="error inline-error" *ngIf="termsCtrl.touched && termsCtrl.errors?.['required']">You must agree to the terms.</span>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+    <button type="button" class="reset-btn" (click)="onReset(enrollForm)">Reset</button>
+  </form>
+
+  <div class="success-msg" *ngIf="submitted">
+    Enrollment request submitted successfully!
+  </div>
+</div>
