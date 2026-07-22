@@ -1,0 +1,22 @@
+<div class="course-list-container">
+  <h2>Course List</h2>
+
+  <button class="add-course-btn" (click)="addNewCourse()">+ Add Test Course</button>
+
+  <p *ngIf="isLoading">Loading courses...</p>
+
+  <ng-container *ngIf="!isLoading">
+    <div class="course-grid" *ngIf="courses.length > 0; else noCourses">
+      <app-course-card
+        *ngFor="let course of courses; let i = index; trackBy: trackByCourseId"
+        [course]="course"
+        (enrollRequested)="onEnroll($event)">
+      </app-course-card>
+    </div>
+    <ng-template #noCourses>
+      <p>No courses available.</p>
+    </ng-template>
+  </ng-container>
+
+  <p class="selected-msg" *ngIf="selectedCourseId">Selected course ID: {{ selectedCourseId }}</p>
+</div>

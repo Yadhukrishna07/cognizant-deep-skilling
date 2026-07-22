@@ -1,0 +1,108 @@
+.form-page {
+  padding: 30px 40px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.form-box {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box.valid-box {
+  border-color: #4caf50;
+}
+
+.form-box.invalid-box {
+  border-color: #f44336;
+}
+
+.form-box label {
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-box input, .form-box select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-box input.ng-invalid.ng-touched,
+.form-box select.ng-invalid.ng-touched {
+  border-color: #f44336;
+}
+
+.form-box input.ng-valid.ng-touched,
+.form-box select.ng-valid.ng-touched {
+  border-color: #4caf50;
+}
+
+.error {
+  color: #f44336;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.inline-error {
+  margin-top: 0;
+}
+
+.submit-btn, .reset-btn {
+  margin-top: 24px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+}
+
+.submit-btn {
+  background-color: #1976d2;
+}
+
+.submit-btn:hover {
+  background-color: #1565c0;
+}
+
+.reset-btn {
+  background-color: #1976d2;
+  margin-top: 12px;
+}
+
+.reset-btn:hover {
+  background-color: #1565c0;
+}
+
+.success-msg {
+  margin-top: 20px;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 14px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+}
