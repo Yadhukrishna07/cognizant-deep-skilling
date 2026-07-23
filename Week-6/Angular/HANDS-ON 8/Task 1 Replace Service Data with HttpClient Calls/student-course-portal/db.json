@@ -1,0 +1,42 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "name": "Data Structures - Updated - Updated - Updated - Updated - Updated - Updated",
+      "code": "CS101",
+      "credits": 4,
+      "gradeStatus": "passed"
+    },
+    {
+      "id": "2",
+      "name": "Operating Systems",
+      "code": "CS102",
+      "credits": 3,
+      "gradeStatus": "failed"
+    },
+    {
+      "id": "3",
+      "name": "Database Management",
+      "code": "CS103",
+      "credits": 4,
+      "gradeStatus": "pending"
+    },
+    {
+      "id": "4",
+      "name": "Computer Networks",
+      "code": "CS104",
+      "credits": 3,
+      "gradeStatus": "passed"
+    },
+    {
+      "id": "5",
+      "name": "Web Development",
+      "code": "CS105",
+      "credits": 2,
+      "gradeStatus": "pending"
+    }
+  ],
+  "students": [],
+  "enrollments": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

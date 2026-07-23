@@ -1,0 +1,8 @@
+<div class="notification-widget">
+  <h4>Notifications (component-scoped instance)</h4>
+  <input [(ngModel)]="newMessage" placeholder="Type a notification...">
+  <button (click)="addMessage()">Add</button>
+  <ul>
+    <li *ngFor="let msg of messages">{{ msg }}</li>
+  </ul>
+</div>

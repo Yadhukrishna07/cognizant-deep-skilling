@@ -1,0 +1,162 @@
+<div class="course-list-container">
+
+  <h2>Course List</h2>
+
+  <!-- Search -->
+
+  <div class="search-section">
+
+    <input
+      type="text"
+      [(ngModel)]="searchTerm"
+      placeholder="Search courses"
+    />
+
+    <button
+      (click)="onSearch()"
+    >
+      Search
+    </button>
+
+  </div>
+
+
+  <!-- Add Course -->
+
+  <button
+    class="add-btn"
+    (click)="addNewCourse()"
+  >
+    + Add Test Course
+  </button>
+
+
+  <!-- Loading -->
+
+  <p *ngIf="isLoading">
+    Loading courses...
+  </p>
+
+
+  <!-- HTTP Error -->
+
+  <div
+    class="error-message"
+    *ngIf="errorMessage"
+  >
+
+    {{ errorMessage }}
+
+  </div>
+
+
+  <!-- Courses -->
+
+  <div
+    class="courses-grid"
+    *ngIf="!isLoading && !errorMessage"
+  >
+
+    <div
+      class="course-item"
+      *ngFor="
+        let course of filteredCourses;
+        trackBy: trackByCourseId
+      "
+    >
+
+      <p>
+        Course ID: {{ course.id }}
+      </p>
+
+      <h3>
+        {{ course.name }}
+      </h3>
+
+      <p>
+        Code: {{ course.code }}
+      </p>
+
+      <p>
+        {{ course.credits }} Credits
+      </p>
+
+      <p>
+        {{ course.gradeStatus }}
+      </p>
+
+
+      <div class="button-group">
+
+        <button
+          (click)="onEnroll(course.id)"
+        >
+          Select
+        </button>
+
+        <button
+          (click)="updateCourse(course)"
+        >
+          Update
+        </button>
+
+        <button
+          (click)="deleteCourse(course.id)"
+        >
+          Delete
+        </button>
+
+        <button
+          (click)="router.navigate(
+            ['/courses', course.id]
+          )"
+        >
+          Show Details
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Students loaded using switchMap -->
+
+  <div
+    class="students-section"
+    *ngIf="selectedCourseId !== null"
+  >
+
+    <h3>
+      Students Enrolled in Course
+      {{ selectedCourseId }}
+    </h3>
+
+    <p
+      *ngIf="selectedStudents.length === 0"
+    >
+      No enrolled students found.
+    </p>
+
+    <ul
+      *ngIf="selectedStudents.length > 0"
+    >
+
+      <li
+        *ngFor="let student of selectedStudents"
+      >
+
+        {{ student.name }}
+
+        <span *ngIf="student.email">
+          - {{ student.email }}
+        </span>
+
+      </li>
+
+    </ul>
+
+  </div>
+
+</div>

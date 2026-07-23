@@ -1,0 +1,96 @@
+.course-list-container {
+  padding: 30px 40px;
+}
+
+.course-list-container h2 {
+  margin-bottom: 20px;
+}
+
+/* Search */
+
+.search-section {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.search-section input {
+  padding: 6px 10px;
+  width: 180px;
+  box-sizing: border-box;
+}
+
+.search-section button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* Add course */
+
+.add-btn {
+  padding: 6px 12px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* Course grid */
+
+.courses-grid {
+  display: grid;
+
+  /* 5 courses across the page */
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  gap: 20px;
+
+  width: 100%;
+}
+
+/* Course card */
+
+.course-item {
+  min-width: 0;
+
+  padding: 12px;
+
+  border-top: 3px solid orange;
+  border-left: 5px solid gray;
+
+  box-sizing: border-box;
+}
+
+.course-item h3 {
+  margin: 18px 0;
+}
+
+.course-item p {
+  margin: 14px 0;
+}
+
+/* Buttons */
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.button-group button {
+  padding: 7px 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+  .courses-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}

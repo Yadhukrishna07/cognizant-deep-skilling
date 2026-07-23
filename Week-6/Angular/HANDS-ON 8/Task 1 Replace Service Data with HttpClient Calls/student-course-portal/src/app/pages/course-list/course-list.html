@@ -1,0 +1,97 @@
+<div class="course-list-container">
+
+  <h2>Course List</h2>
+
+  <!-- Search -->
+  <div class="search-section">
+    <input
+      type="text"
+      [(ngModel)]="searchTerm"
+      placeholder="Search courses"
+    />
+
+    <button (click)="onSearch()">
+      Search
+    </button>
+  </div>
+
+  <!-- Add Course -->
+  <button
+    class="add-btn"
+    (click)="addNewCourse()"
+  >
+    + Add Test Course
+  </button>
+
+  <!-- Loading -->
+  <p *ngIf="isLoading">
+    Loading courses...
+  </p>
+
+  <!-- Courses -->
+  <div
+    class="courses-grid"
+    *ngIf="!isLoading"
+  >
+
+    <div
+      class="course-item"
+      *ngFor="
+        let course of filteredCourses;
+        trackBy: trackByCourseId
+      "
+    >
+
+      <p>
+        Course ID: {{ course.id }}
+      </p>
+
+      <h3>
+        {{ course.name }}
+      </h3>
+
+      <p>
+        Code: {{ course.code }}
+      </p>
+
+      <p>
+        {{ course.credits }} Credits
+      </p>
+
+      <p>
+        {{ course.gradeStatus }}
+      </p>
+
+      <div class="button-group">
+
+        <button
+          (click)="onEnroll(course.id)"
+        >
+          Enroll
+        </button>
+
+        <button
+          (click)="updateCourse(course)"
+        >
+          Update
+        </button>
+
+        <button
+          (click)="deleteCourse(course.id)"
+        >
+          Delete
+        </button>
+
+        <button
+          (click)="router.navigate(['/courses', course.id])"
+        >
+          Show Details
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
