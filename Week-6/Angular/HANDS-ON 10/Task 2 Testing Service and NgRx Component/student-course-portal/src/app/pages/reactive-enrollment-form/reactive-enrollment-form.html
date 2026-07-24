@@ -1,0 +1,45 @@
+<div class="form-page">
+  <h2 class="form-title">Reactive Enrollment Form</h2>
+
+  <form [formGroup]="enrollForm" (ngSubmit)="onSubmit()" class="form-box">
+
+    <label>Student Name:</label>
+    <input type="text" formControlName="studentName">
+    <p class="error" *ngIf="enrollForm.get('studentName')?.touched && enrollForm.get('studentName')?.errors?.['required']">Name is required.</p>
+    <p class="error" *ngIf="enrollForm.get('studentName')?.touched && enrollForm.get('studentName')?.errors?.['minlength']">Name must be at least 3 characters.</p>
+
+    <label>Student Email:</label>
+    <input type="email" formControlName="studentEmail">
+    <p class="error" *ngIf="enrollForm.get('studentEmail')?.touched && enrollForm.get('studentEmail')?.errors?.['required']">Email is required.</p>
+    <p class="error" *ngIf="enrollForm.get('studentEmail')?.touched && enrollForm.get('studentEmail')?.errors?.['email']">Enter a valid email.</p>
+    <p class="error" *ngIf="enrollForm.get('studentEmail')?.touched && enrollForm.get('studentEmail')?.errors?.['emailTaken']">This email is already taken.</p>
+    <p class="checking" *ngIf="enrollForm.get('studentEmail')?.pending">Checking email...</p>
+
+    <label>Course ID:</label>
+    <input type="text" formControlName="courseId">
+    <p class="error" *ngIf="enrollForm.get('courseId')?.touched && enrollForm.get('courseId')?.errors?.['required']">Course ID is required.</p>
+    <p class="error" *ngIf="enrollForm.get('courseId')?.touched && enrollForm.get('courseId')?.errors?.['noCourseCode']">Course code starting with XX is not allowed.</p>
+
+    <label>Preferred Semester:</label>
+    <select formControlName="preferredSemester">
+      <option value="Odd">Odd</option>
+      <option value="Even">Even</option>
+    </select>
+
+    <div class="checkbox-row">
+      <input type="checkbox" formControlName="agreeToTerms">
+      <label>I agree to the terms and conditions</label>
+    </div>
+
+    <div class="form-array-section">
+      <label>Additional Courses:</label>
+      <div class="course-row" *ngFor="let ctrl of additionalCourses.controls; let i = index">
+        <input [formControl]="$any(ctrl)" placeholder="Course name">
+        <button type="button" class="remove-btn" (click)="removeCourse(i)">Remove</button>
+      </div>
+      <button type="button" class="add-btn" (click)="addCourse()">+ Add Another Course</button>
+    </div>
+
+    <button type="submit" class="submit-btn" [disabled]="enrollForm.invalid">Submit</button>
+  </form>
+</div>
