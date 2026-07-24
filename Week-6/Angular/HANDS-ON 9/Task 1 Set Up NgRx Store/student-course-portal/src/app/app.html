@@ -1,0 +1,7 @@
+<app-header></app-header>
+
+<div class="global-spinner-overlay" *ngIf="loadingService.isLoading$ | async">
+  <div class="spinner"></div>
+</div>
+
+<router-outlet></router-outlet>
